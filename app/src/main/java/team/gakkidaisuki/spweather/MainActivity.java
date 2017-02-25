@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         new Thread(){
             @Override
-            public void run() {
+            public void run() { //厉害了接口
                 try {
                     Log.d(TAG, "handleMessage: "+ MainActivity.this.run("https://api.heweather.com/v5/forecast?key=515562c1513741579ff9278765821dc7&city=%E5%8C%97%E4%BA%AC"));
                 } catch (IOException e) {
